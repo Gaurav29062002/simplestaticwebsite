@@ -22,12 +22,14 @@ jobs:
       - checkout
 
       - run:
-          name: Install Vercel CLI
-          command: npm install -g vercel
+          name: Install Vercel CLI Locally
+          command: npm install vercel
+
 
       - run:
           name: Deploy to Vercel
-          command: vercel --prod --token $VERCEL_TOKEN
+          command: npx vercel --prod --token $VERCEL_TOKEN --confirm
+
 
 workflows:
   version: 2
