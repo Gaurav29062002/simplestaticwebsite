@@ -28,7 +28,7 @@ jobs:
 
       - run:
           name: Deploy to Vercel
-          command: npx vercel --prod --token $VERCEL_TOKEN --confirm
+          command: npx vercel --prod --token $vercel --confirm
 
 
 workflows:
