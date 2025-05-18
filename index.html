@@ -2,19 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ToDo List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Task List</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <h1>Task List</h1>
-  
-  <form id="todo-form">
-    <input type="text" id="todo-input" placeholder="Enter a new task" required />
-    <button type="submit" id="add-btn">Add</button>
-  </form>
+  <div class="container">
+    <h1>Task List</h1>
+    <form id="todo-form">
+      <input type="text" id="todo-input" placeholder="Enter a new task" required />
+      <button type="submit" id="add-btn">Add</button>
+    </form>
 
-  <div id="taskList"></div>
+    <div id="taskList"></div>
+
+    <div class="footer">
+      <button id="clear-btn">Clear All Tasks</button>
+      <span id="task-count">0 tasks left</span>
+    </div>
+  </div>
 
   <script src="js/script.js"></script>
 </body>
