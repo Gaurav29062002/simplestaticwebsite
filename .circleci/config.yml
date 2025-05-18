@@ -3,9 +3,9 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: cimg/node:20.0  # Node.js environment
+      - image: cimg/node:20.0 
     steps:
-      - checkout  # Get your code
+      - checkout  
 
       - run:
           name: Install dependencies
